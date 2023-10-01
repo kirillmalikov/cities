@@ -1,0 +1,36 @@
+services:
+  postgres:
+    container_name: database
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=cities'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5432:5432'
+    volumes:
+      - './src/main/resources/db/csv/city.csv:/city.csv'
+
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: Dockerfile-backend
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgres
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./ui
+      dockerfile: ../Dockerfile-ui
+    volumes:
+      - './ui:/app'
+    ports:
+      - 3000:3000
+    stdin_open: true
+    command: npm start
+    depends_on:
+      - backend

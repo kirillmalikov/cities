@@ -1,0 +1,13 @@
+.edit-dropdown {
+    display: none;
+    position: inherit;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    max-width: 200px;
+    transition: all linear 0.3s;
+}
+
+.edit-dropdown.active {
+    background-color: inherit;
+    display: inline-block;
+}

@@ -1,0 +1,38 @@
+.account-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.account {
+    background-color: white;
+}
+
+.account.dark {
+    background-color: #333;
+}
+
+.account-text {
+    cursor: pointer;
+}
+
+.account-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    min-width: 100px;
+    transition: all linear 0.3s;
+}
+
+.account-dropdown.active {
+    background-color: inherit;
+    display: block;
+    z-index: 1000;
+}

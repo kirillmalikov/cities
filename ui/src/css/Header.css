@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.header.dark {
+    background-color: #333;
+    color: white;
+}
+
+.header h1 {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.header-right {
+    margin-right: 50px;
+}
+
+.logo {
+    background-image: url('../img/logo512.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin-left: 20px;
+}
+
+.logo.dark {
+    background-image: url('../img/logo512-negative.png');
+}

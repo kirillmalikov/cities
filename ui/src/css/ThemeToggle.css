@@ -1,0 +1,27 @@
+.theme-toggle {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 15px;
+    border-radius: 14px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.8;
+}
+
+.theme-toggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(150, 150, 150, 0.8);
+    cursor: pointer;
+}
+
+.theme-toggle.dark {
+    background-color: white;
+}
+
+.theme-toggle:hover {
+    background-color: #555;
+}

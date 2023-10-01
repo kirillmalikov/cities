@@ -1,0 +1,5 @@
+INSERT INTO role (name)
+VALUES ('ROLE_ALLOW_VIEW'),
+       ('ROLE_ALLOW_EDIT');
+
+COPY city FROM '/city.csv' WITH CSV HEADER;

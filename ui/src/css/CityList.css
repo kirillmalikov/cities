@@ -1,14 +1,14 @@
 .city-list {
-    display: flex; /* Use flexbox */
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 100px;
 }
 
 .city-list-container {
-    display: flex; /* Use flexbox */
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pagination {

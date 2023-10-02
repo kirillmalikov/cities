@@ -1,4 +1,3 @@
-// Create a new file SearchContext.tsx
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface SearchContextProps {
@@ -17,7 +16,7 @@ export const useSearchContext = () => {
 };
 
 interface SearchProviderProps {
-    children: ReactNode; // Define children as a ReactNode
+    children: ReactNode;
 }
 
 export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {

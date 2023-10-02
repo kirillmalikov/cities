@@ -25,7 +25,7 @@ const CityList: React.FC = () => {
                     }
                     setCities(data);
                 } catch (error) {
-                    // Handle errors here
+                    console.log(error)
                 }
             }
         }

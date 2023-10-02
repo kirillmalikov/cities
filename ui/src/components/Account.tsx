@@ -1,4 +1,4 @@
-import Authentication from './Authentication'; // Import the Authentication component
+import Authentication from './Authentication';
 import '../css/Account.css';
 import ThemeToggle from "./ThemeToggle";
 import React from "react";

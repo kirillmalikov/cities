@@ -27,7 +27,6 @@ const Header: React.FC<HeaderProps> = ({darkMode, onToggleTheme}) => {
     return (
         <div className={`header ${darkMode ? 'dark' : ''}`}>
             <div className={`logo ${darkMode ? 'dark' : ''}`}/>
-            {/*<h1>List of Cities</h1>*/}
             <h1>City List</h1>
             <CitySearch onSearch={handleCitySearch} />
             <div className="header-right">

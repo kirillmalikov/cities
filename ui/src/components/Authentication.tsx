@@ -27,7 +27,6 @@ const Authentication: React.FC = () => {
             window.location.reload();
         } catch (error) {
             console.error('Error creating user or logging in:', error);
-            // Handle the error as needed (e.g., show an error message to the user).
         }
     };
 
@@ -41,7 +40,6 @@ const Authentication: React.FC = () => {
             window.location.reload();
         } catch (error) {
             console.error('Error logging in:', error);
-            // Handle the error as needed (e.g., show an error message to the user).
         }
     };
 
